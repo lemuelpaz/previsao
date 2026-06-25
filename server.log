@@ -1,0 +1,491 @@
+  ▲ Next.js 14.2.5
+  - Local:        http://localhost:3001
+  - Environments: .env
+
+ ✓ Starting...
+ ✓ Ready in 3.8s
+ ○ Compiling / ...
+ ✓ Compiled / in 4.3s (462 modules)
+ GET / 200 in 4665ms
+ ○ Compiling /api/portfolio ...
+ ✓ Compiled /api/portfolio in 8s (351 modules)
+ ✓ Compiled (355 modules)
+ GET /api/markets?status=all&category=Todos 200 in 8437ms
+ GET /api/auth/me 200 in 8441ms
+ GET /api/portfolio 200 in 8442ms
+ GET /api/auth/me 200 in 44ms
+ GET /api/markets?status=all&category=Todos 200 in 49ms
+ GET /api/portfolio 200 in 51ms
+ ✓ Compiled /admin in 416ms (591 modules)
+ GET /admin 200 in 705ms
+ GET /admin 200 in 61ms
+ GET /api/auth/me 200 in 49ms
+ ✓ Compiled /api/admin/financial in 153ms (361 modules)
+ ✓ Compiled (363 modules)
+ GET /api/auth/me 200 in 360ms
+ GET /api/admin/stats 403 in 417ms
+ GET /api/admin/financial?limit=10 403 in 418ms
+ GET /api/admin/stats 403 in 96ms
+ GET /api/admin/financial?limit=10 403 in 106ms
+ ✓ Compiled /admin/markets in 317ms (597 modules)
+ ✓ Compiled /api/admin/markets in 133ms (369 modules)
+ GET /api/auth/me 200 in 316ms
+ GET /api/admin/markets 403 in 347ms
+ GET /api/auth/me 200 in 58ms
+ ✓ Compiled /api/portfolio in 133ms (371 modules)
+ ✓ Compiled (373 modules)
+ GET /api/admin/markets 403 in 323ms
+ GET /api/markets?status=all&category=Todos 200 in 351ms
+ GET /api/auth/me 200 in 292ms
+ GET /api/portfolio 200 in 354ms
+ GET /api/auth/me 200 in 35ms
+ GET /api/portfolio 200 in 37ms
+ GET /api/markets?status=all&category=Todos 200 in 46ms
+ ✓ Compiled /admin/financial in 474ms (609 modules)
+ GET /api/admin/financial?type=all&limit=100 403 in 20ms
+ GET /api/auth/me 200 in 30ms
+ GET /api/admin/financial?type=all&limit=100 403 in 25ms
+ ✓ Compiled /admin/users in 479ms (615 modules)
+ GET /api/auth/me 200 in 555ms
+ GET /api/markets?status=all&category=Todos 200 in 21ms
+ GET /api/portfolio 200 in 25ms
+ GET /api/auth/me 200 in 32ms
+ GET /api/markets?status=all&category=Todos 200 in 46ms
+ GET /api/auth/me 200 in 53ms
+ GET /api/portfolio 200 in 55ms
+ GET /api/auth/me 200 in 17ms
+ GET /api/admin/financial?type=all&limit=100 403 in 23ms
+ GET /api/auth/me 200 in 25ms
+ GET /api/markets?status=all&category=Todos 200 in 36ms
+ GET /api/admin/financial?type=all&limit=100 403 in 42ms
+ GET /api/portfolio 200 in 47ms
+ GET /api/auth/me 200 in 57ms
+ GET /api/markets?status=all&category=Todos 200 in 56ms
+ GET /api/portfolio 200 in 59ms
+ GET /api/auth/me 200 in 42ms
+ GET / 200 in 165ms
+ GET /api/auth/me 200 in 16ms
+ GET /api/markets?status=all&category=Todos 200 in 28ms
+ GET /api/portfolio 200 in 40ms
+ GET /api/auth/me 200 in 25ms
+ GET /api/markets?status=all&category=Todos 200 in 35ms
+ GET /api/portfolio 200 in 80ms
+ GET /admin 200 in 53ms
+ GET /api/auth/me 200 in 24ms
+ GET /api/admin/financial?limit=10 403 in 33ms
+ GET /api/admin/stats 403 in 36ms
+ GET /api/auth/me 200 in 25ms
+ GET /api/admin/stats 403 in 83ms
+ GET /api/admin/financial?limit=10 403 in 92ms
+ GET / 200 in 83ms
+ GET /api/auth/me 200 in 13ms
+ GET /api/portfolio 200 in 28ms
+ GET /api/markets?status=all&category=Todos 200 in 31ms
+ GET /api/auth/me 200 in 25ms
+ GET /api/portfolio 200 in 22ms
+ GET /api/markets?status=all&category=Todos 200 in 25ms
+ GET /admin 200 in 46ms
+ GET /api/auth/me 200 in 25ms
+ GET /api/admin/financial?limit=10 403 in 27ms
+ GET /api/admin/stats 403 in 33ms
+ GET /api/auth/me 200 in 32ms
+ GET /api/admin/financial?limit=10 403 in 63ms
+ GET /api/admin/stats 403 in 159ms
+ ✓ Compiled in 182ms (232 modules)
+ ✓ Compiled in 627ms (466 modules)
+ ✓ Compiled in 133ms (234 modules)
+ ✓ Compiled in 109ms (234 modules)
+ ✓ Compiled in 234ms (234 modules)
+ GET /admin 200 in 217ms
+ GET / 200 in 52ms
+ ✓ Compiled /api/portfolio in 320ms (359 modules)
+ ✓ Compiled (363 modules)
+ GET /api/markets?status=all&category=Todos 200 in 586ms
+ GET /api/auth/me 200 in 588ms
+ GET /api/portfolio 200 in 591ms
+ GET /api/markets?status=all&category=Todos 200 in 58ms
+ GET /api/auth/me 200 in 56ms
+ GET /api/portfolio 200 in 64ms
+ ✓ Compiled /api/auth/logout in 351ms (357 modules)
+ POST /api/auth/logout 200 in 470ms
+ ✓ Compiled /login in 456ms (597 modules)
+ ✓ Compiled /api/auth/login in 159ms (368 modules)
+ POST /api/auth/login 200 in 337ms
+ ✓ Compiled /api/auth/me in 88ms (370 modules)
+ GET /api/auth/me 200 in 151ms
+ ✓ Compiled /api/admin/stats in 211ms (372 modules)
+ ✓ Compiled (374 modules)
+ GET /api/auth/me 200 in 478ms
+ GET /api/admin/stats 200 in 513ms
+ GET /api/admin/financial?limit=10 200 in 517ms
+ GET /api/admin/stats 200 in 83ms
+ GET /api/admin/financial?limit=10 200 in 71ms
+ ✓ Compiled /admin/users in 186ms (378 modules)
+ GET /api/auth/me 200 in 21ms
+ GET /api/auth/me 200 in 12ms
+ ✓ Compiled /api/admin/users in 145ms (380 modules)
+ ⨯ PrismaClientValidationError: 
+Invalid `prisma.user.findMany()` invocation:
+
+{
+  orderBy: {
+    createdAt: "desc"
+  },
+  include: {
+  ~~~~~~~
+    _count: {
+      select: {
+        positions: true,
+        transactions: true
+      }
+    }
+  },
+  select: {
+  ~~~~~~
+    id: true,
+    phone: true,
+    name: true,
+    role: true,
+    balance: true,
+    createdAt: true,
+    _count: true
+  }
+}
+
+Please either use `include` or `select`, but not both at the same time.
+    at wn (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:29:1363)
+    at e.throwValidationError (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:29:10206)
+    at ed (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:29:6103)
+    at mr (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:29:6055)
+    at vn (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:29:5902)
+    at C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:130:10186
+    at Object.runInChildSpan (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:121:1509)
+    at t._executeRequest (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:130:10165)
+    at Na (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:31:9955)
+    at l (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:130:9639)
+    at C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:130:9933
+    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)
+    at C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:130:9913
+    at Object.runInChildSpan (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:121:1509)
+    at t._request (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:130:9836)
+    at s (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:31:5636)
+    at C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:31:5864
+    at i (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:121:1016)
+    at PrismaPromise.then (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:121:1091) {
+  clientVersion: '5.22.0'
+}
+ GET /api/admin/users 500 in 220ms
+ ⨯ PrismaClientValidationError: 
+Invalid `prisma.user.findMany()` invocation:
+
+{
+  orderBy: {
+    createdAt: "desc"
+  },
+  include: {
+  ~~~~~~~
+    _count: {
+      select: {
+        positions: true,
+        transactions: true
+      }
+    }
+  },
+  select: {
+  ~~~~~~
+    id: true,
+    phone: true,
+    name: true,
+    role: true,
+    balance: true,
+    createdAt: true,
+    _count: true
+  }
+}
+
+Please either use `include` or `select`, but not both at the same time.
+    at wn (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:29:1363)
+    at e.throwValidationError (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:29:10206)
+    at ed (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:29:6103)
+    at mr (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:29:6055)
+    at vn (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:29:5902)
+    at C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:130:10186
+    at Object.runInChildSpan (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:121:1509)
+    at t._executeRequest (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:130:10165)
+    at Na (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:31:9955)
+    at l (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:130:9639)
+    at C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:130:9933
+    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)
+    at C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:130:9913
+    at Object.runInChildSpan (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:121:1509)
+    at t._request (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:130:9836)
+    at s (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:31:5636)
+    at C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:31:5864
+    at i (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:121:1016)
+    at PrismaPromise.then (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:121:1091) {
+  clientVersion: '5.22.0'
+}
+ GET /api/admin/users 500 in 16ms
+ ✓ Compiled /admin/markets in 147ms (384 modules)
+ GET /api/auth/me 200 in 18ms
+ ✓ Compiled /api/admin/markets in 149ms (386 modules)
+ GET /api/auth/me 200 in 328ms
+ GET /api/admin/markets 200 in 340ms
+ GET /api/admin/markets 200 in 17ms
+ POST /api/admin/markets 200 in 27ms
+ GET /api/admin/markets 200 in 14ms
+ POST /api/admin/markets 200 in 20ms
+ GET /api/admin/markets 200 in 20ms
+ POST /api/admin/markets 200 in 21ms
+ GET /api/admin/markets 200 in 21ms
+ POST /api/admin/markets 200 in 22ms
+ GET /api/admin/markets 200 in 24ms
+ POST /api/admin/markets 200 in 21ms
+ GET /api/admin/markets 200 in 19ms
+ POST /api/admin/markets 200 in 18ms
+ GET /api/admin/markets 200 in 16ms
+ ✓ Compiled /admin/financial in 296ms (371 modules)
+ ✓ Compiled /api/auth/me in 113ms (373 modules)
+ GET /api/auth/me 200 in 212ms
+ GET /api/auth/me 200 in 31ms
+ ✓ Compiled /api/admin/financial in 108ms (375 modules)
+ GET /api/admin/financial?type=all&limit=100 200 in 206ms
+ GET /api/admin/financial?type=all&limit=100 200 in 26ms
+ ✓ Compiled /admin/users in 350ms (379 modules)
+ GET /api/auth/me 200 in 63ms
+ GET /api/auth/me 200 in 15ms
+ ✓ Compiled /api/admin/users in 249ms (384 modules)
+ ⨯ PrismaClientValidationError: 
+Invalid `prisma.user.findMany()` invocation:
+
+{
+  orderBy: {
+    createdAt: "desc"
+  },
+  include: {
+  ~~~~~~~
+    _count: {
+      select: {
+        positions: true,
+        transactions: true
+      }
+    }
+  },
+  select: {
+  ~~~~~~
+    id: true,
+    phone: true,
+    name: true,
+    role: true,
+    balance: true,
+    createdAt: true,
+    _count: true
+  }
+}
+
+Please either use `include` or `select`, but not both at the same time.
+    at wn (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:29:1363)
+    at e.throwValidationError (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:29:10206)
+    at ed (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:29:6103)
+    at mr (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:29:6055)
+    at vn (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:29:5902)
+    at C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:130:10186
+    at Object.runInChildSpan (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:121:1509)
+    at t._executeRequest (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:130:10165)
+    at Na (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:31:9955)
+    at l (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:130:9639)
+    at C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:130:9933
+    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)
+    at C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:130:9913
+    at Object.runInChildSpan (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:121:1509)
+    at t._request (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:130:9836)
+    at s (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:31:5636)
+    at C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:31:5864
+    at i (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:121:1016)
+    at PrismaPromise.then (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:121:1091) {
+  clientVersion: '5.22.0'
+}
+ GET /api/admin/users 500 in 348ms
+ ⨯ PrismaClientValidationError: 
+Invalid `prisma.user.findMany()` invocation:
+
+{
+  orderBy: {
+    createdAt: "desc"
+  },
+  include: {
+  ~~~~~~~
+    _count: {
+      select: {
+        positions: true,
+        transactions: true
+      }
+    }
+  },
+  select: {
+  ~~~~~~
+    id: true,
+    phone: true,
+    name: true,
+    role: true,
+    balance: true,
+    createdAt: true,
+    _count: true
+  }
+}
+
+Please either use `include` or `select`, but not both at the same time.
+    at wn (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:29:1363)
+    at e.throwValidationError (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:29:10206)
+    at ed (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:29:6103)
+    at mr (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:29:6055)
+    at vn (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:29:5902)
+    at C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:130:10186
+    at Object.runInChildSpan (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:121:1509)
+    at t._executeRequest (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:130:10165)
+    at Na (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:31:9955)
+    at l (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:130:9639)
+    at C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:130:9933
+    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)
+    at C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:130:9913
+    at Object.runInChildSpan (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:121:1509)
+    at t._request (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:130:9836)
+    at s (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:31:5636)
+    at C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:31:5864
+    at i (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:121:1016)
+    at PrismaPromise.then (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:121:1091) {
+  clientVersion: '5.22.0'
+}
+ GET /api/admin/users 500 in 21ms
+ ○ Compiling /admin/gateway ...
+ ✓ Compiled /admin/gateway in 740ms (626 modules)
+ GET /api/auth/me 200 in 27ms
+ GET /api/auth/me 200 in 20ms
+ ✓ Compiled /api/admin/gateway in 238ms (392 modules)
+ GET /api/admin/gateway 200 in 332ms
+ GET /api/admin/gateway 200 in 16ms
+ GET /api/auth/me 200 in 19ms
+ GET /api/auth/me 200 in 23ms
+ ⨯ PrismaClientValidationError: 
+Invalid `prisma.user.findMany()` invocation:
+
+{
+  orderBy: {
+    createdAt: "desc"
+  },
+  include: {
+  ~~~~~~~
+    _count: {
+      select: {
+        positions: true,
+        transactions: true
+      }
+    }
+  },
+  select: {
+  ~~~~~~
+    id: true,
+    phone: true,
+    name: true,
+    role: true,
+    balance: true,
+    createdAt: true,
+    _count: true
+  }
+}
+
+Please either use `include` or `select`, but not both at the same time.
+    at wn (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:29:1363)
+    at e.throwValidationError (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:29:10206)
+    at ed (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:29:6103)
+    at mr (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:29:6055)
+    at vn (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:29:5902)
+    at C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:130:10186
+    at Object.runInChildSpan (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:121:1509)
+    at t._executeRequest (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:130:10165)
+    at Na (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:31:9955)
+    at l (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:130:9639)
+    at C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:130:9933
+    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)
+    at C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:130:9913
+    at Object.runInChildSpan (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:121:1509)
+    at t._request (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:130:9836)
+    at s (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:31:5636)
+    at C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:31:5864
+    at i (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:121:1016)
+    at PrismaPromise.then (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:121:1091) {
+  clientVersion: '5.22.0'
+}
+ GET /api/admin/users 500 in 29ms
+ ⨯ PrismaClientValidationError: 
+Invalid `prisma.user.findMany()` invocation:
+
+{
+  orderBy: {
+    createdAt: "desc"
+  },
+  include: {
+  ~~~~~~~
+    _count: {
+      select: {
+        positions: true,
+        transactions: true
+      }
+    }
+  },
+  select: {
+  ~~~~~~
+    id: true,
+    phone: true,
+    name: true,
+    role: true,
+    balance: true,
+    createdAt: true,
+    _count: true
+  }
+}
+
+Please either use `include` or `select`, but not both at the same time.
+    at wn (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:29:1363)
+    at e.throwValidationError (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:29:10206)
+    at ed (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:29:6103)
+    at mr (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:29:6055)
+    at vn (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:29:5902)
+    at C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:130:10186
+    at Object.runInChildSpan (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:121:1509)
+    at t._executeRequest (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:130:10165)
+    at Na (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:31:9955)
+    at l (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:130:9639)
+    at C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:130:9933
+    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)
+    at C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:130:9913
+    at Object.runInChildSpan (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:121:1509)
+    at t._request (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:130:9836)
+    at s (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:31:5636)
+    at C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:31:5864
+    at i (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:121:1016)
+    at PrismaPromise.then (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:121:1091) {
+  clientVersion: '5.22.0'
+}
+ GET /api/admin/users 500 in 14ms
+ GET / 200 in 130ms
+ GET /api/auth/me 200 in 44ms
+ ✓ Compiled /api/portfolio in 242ms (390 modules)
+ ✓ Compiled (392 modules)
+ GET /api/markets?status=all&category=Todos 200 in 510ms
+ GET /api/auth/me 200 in 464ms
+ GET /api/portfolio 200 in 516ms
+ GET /api/markets?status=all&category=Todos 200 in 43ms
+ GET /api/portfolio 200 in 33ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 914ms (633 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 1247ms
+ ○ Compiling /market/[id] ...
+ ✓ Compiled /market/[id] in 736ms (488 modules)
+ ✓ Compiled /api/markets/[id] in 116ms (375 modules)
+ ✓ Compiled (377 modules)
+ GET /api/auth/me 200 in 604ms
+ GET /api/auth/me 200 in 17ms
+ GET /api/markets/cmqktygkq000nwdbvkjuk2i78 200 in 1207ms
+ GET /api/markets/cmqktygkq000nwdbvkjuk2i78 200 in 24ms
+ GET /api/auth/me 200 in 20ms

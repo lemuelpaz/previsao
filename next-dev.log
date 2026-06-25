@@ -1,0 +1,694 @@
+  ▲ Next.js 14.2.5
+  - Local:        http://localhost:3000
+  - Environments: .env
+
+ ✓ Starting...
+ ✓ Ready in 2.7s
+ ✓ Compiled /api/markets in 252ms (55 modules)
+ GET /api/markets?status=all&category=Todos 200 in 2847ms
+ ✓ Compiled /api/leaderboard in 174ms (57 modules)
+ GET /api/leaderboard 200 in 717ms
+ GET /api/markets?status=all&category=Todos 200 in 697ms
+ ○ Compiling /api/markets/[id] ...
+ ✓ Compiled /api/markets/[id] in 518ms (158 modules)
+ GET /api/markets/cmql2l1ti000hzmmnlo5vrjwe 200 in 2471ms
+ ✓ Compiled /api/auth/me in 182ms (160 modules)
+ GET /api/auth/me 200 in 265ms
+ ✓ Compiled /api/auth/login in 309ms (158 modules)
+ POST /api/auth/login 200 in 1184ms
+ ✓ Compiled /api/auth/me in 97ms (160 modules)
+ GET /api/auth/me 200 in 640ms
+ ✓ Compiled /api/portfolio in 59ms (162 modules)
+ GET /api/portfolio 200 in 1458ms
+ ✓ Compiled /api/markets in 61ms (164 modules)
+ GET /api/markets?status=open 200 in 1039ms
+ POST /api/auth/login 200 in 330ms
+ ✓ Compiled /api/markets/[id]/trade in 153ms (166 modules)
+ POST /api/markets/cmql2l1ti000hzmmnlo5vrjwe/trade 200 in 7711ms
+ GET /api/portfolio 200 in 2250ms
+ ✓ Compiled /api/leaderboard in 140ms (55 modules)
+ GET /api/leaderboard 200 in 916ms
+ ○ Compiling / ...
+ ✓ Compiled / in 828ms (530 modules)
+ GET / 200 in 1118ms
+ ○ Compiling /api/markets ...
+ ✓ Compiled /api/markets in 642ms (379 modules)
+ ✓ Compiled (381 modules)
+ GET /api/auth/me 200 in 1796ms
+ GET /api/auth/me 200 in 236ms
+ GET /api/markets?status=all&category=Todos 200 in 2441ms
+ GET /api/markets?status=all&category=Todos 200 in 464ms
+ ✓ Compiled /register in 386ms (635 modules)
+ ✓ Compiled /api/auth/register in 351ms (390 modules)
+ POST /api/auth/register 200 in 1891ms
+ GET /api/auth/me 200 in 469ms
+ ✓ Compiled /api/portfolio in 107ms (392 modules)
+ GET /api/auth/me 200 in 504ms
+ GET /api/markets?status=all&category=Todos 200 in 1152ms
+ GET /api/markets?status=all&category=Todos 200 in 469ms
+ GET /api/portfolio 200 in 3078ms
+ GET /api/portfolio 200 in 685ms
+ ✓ Compiled /portfolio in 261ms (646 modules)
+ GET /api/auth/me 200 in 544ms
+ GET /api/auth/me 200 in 230ms
+ GET /api/portfolio 200 in 1458ms
+ GET /api/portfolio 200 in 680ms
+ ✓ Compiled /api/payments/deposit in 172ms (461 modules)
+ POST /api/payments/deposit 200 in 3009ms
+ GET /api/auth/me 200 in 481ms
+ GET /api/markets?status=all&category=Todos 200 in 926ms
+ GET /api/auth/me 200 in 482ms
+ GET /api/portfolio 200 in 708ms
+ GET /api/markets?status=all&category=Todos 200 in 681ms
+ GET /api/portfolio 200 in 690ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 808ms (716 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 1109ms
+ ✓ Compiled in 604ms (510 modules)
+ ✓ Compiled in 123ms (258 modules)
+ ✓ Compiled in 365ms (515 modules)
+ ✓ Compiled in 1041ms (529 modules)
+ GET / 200 in 342ms
+ ○ Compiling /api/markets ...
+ ✓ Compiled /api/markets in 667ms (388 modules)
+ ✓ Compiled (390 modules)
+ GET /api/auth/me 200 in 2792ms
+ ✓ Compiled /api/portfolio in 177ms (392 modules)
+ GET /api/auth/me 200 in 268ms
+ GET /api/markets?status=all&category=Todos 200 in 3215ms
+ GET /api/markets?status=all&category=Todos 200 in 463ms
+ GET /api/portfolio 200 in 1592ms
+ GET /api/portfolio 200 in 688ms
+ ✓ Compiled /_not-found in 365ms (649 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 838ms
+ GET /api/auth/me 200 in 517ms
+ GET /api/auth/me 200 in 243ms
+ GET /api/portfolio 200 in 1760ms
+ GET /api/portfolio 200 in 698ms
+ ✓ Compiled /api/payments/deposit in 387ms (458 modules)
+ POST /api/payments/deposit 200 in 3275ms
+ ✓ Compiled /api/markets in 117ms (460 modules)
+ GET /api/auth/me 200 in 698ms
+ GET /api/auth/me 200 in 242ms
+ GET /api/markets?status=all&category=Todos 200 in 1348ms
+ GET /api/markets?status=all&category=Todos 200 in 490ms
+ GET /api/portfolio 200 in 2855ms
+ ○ Compiling /leaderboard ...
+ ✓ Compiled /leaderboard in 666ms (720 modules)
+ ✓ Compiled /api/leaderboard in 283ms (466 modules)
+ GET /api/portfolio 200 in 1293ms
+ GET /api/auth/me 200 in 745ms
+ GET /api/leaderboard 200 in 969ms
+ GET /api/auth/me 200 in 239ms
+ GET /api/leaderboard 200 in 472ms
+ GET /api/auth/me 200 in 283ms
+ GET /api/auth/me 200 in 235ms
+ GET /api/portfolio 200 in 732ms
+ GET /api/portfolio 200 in 687ms
+ GET /api/auth/me 200 in 245ms
+ GET /api/markets?status=all&category=Todos 200 in 485ms
+ GET /api/auth/me 200 in 252ms
+ GET /api/portfolio 200 in 697ms
+ GET /api/markets?status=all&category=Todos 200 in 473ms
+ GET /api/portfolio 200 in 913ms
+ ✓ Compiled /market/[id] in 389ms (728 modules)
+ ✓ Compiled /api/markets/[id] in 155ms (472 modules)
+ GET /api/auth/me 200 in 267ms
+ GET /api/auth/me 200 in 247ms
+ GET /api/markets/cmql2l1ti000hzmmnlo5vrjwe 200 in 2328ms
+ GET /api/markets/cmql2l1ti000hzmmnlo5vrjwe 200 in 940ms
+ ✓ Compiled /api/markets/[id]/trade in 175ms (474 modules)
+ POST /api/markets/cmql2l1ti000hzmmnlo5vrjwe/trade 200 in 5447ms
+ GET /api/markets/cmql2l1ti000hzmmnlo5vrjwe 200 in 2256ms
+ GET /api/auth/me 200 in 490ms
+ GET /api/auth/me 200 in 242ms
+ GET /api/portfolio 200 in 1841ms
+ GET /api/portfolio 200 in 1167ms
+ GET /api/auth/me 200 in 480ms
+ GET /api/auth/me 200 in 237ms
+ GET /api/markets/cmql2l1ti000hzmmnlo5vrjwe 200 in 1145ms
+ GET /api/markets/cmql2l1ti000hzmmnlo5vrjwe 200 in 1141ms
+ GET /api/auth/me 200 in 480ms
+ GET /api/auth/me 200 in 248ms
+ GET /api/markets?status=all&category=Todos 200 in 1194ms
+ GET /api/markets?status=all&category=Todos 200 in 471ms
+ GET /api/portfolio 200 in 1835ms
+ GET /api/portfolio 200 in 1165ms
+ GET / 200 in 137ms
+ ✓ Compiled in 480ms (527 modules)
+ ✓ Compiled in 219ms (527 modules)
+ ✓ Compiled in 215ms (527 modules)
+ ✓ Compiled in 248ms (527 modules)
+ ✓ Compiled in 703ms (527 modules)
+ ✓ Compiled in 271ms (527 modules)
+ ✓ Compiled in 396ms (527 modules)
+ ✓ Compiled in 770ms (527 modules)
+ ✓ Compiled in 250ms (527 modules)
+ ✓ Compiled in 328ms (527 modules)
+ GET / 200 in 241ms
+ ○ Compiling /api/markets ...
+ ✓ Compiled /api/markets in 615ms (396 modules)
+ ✓ Compiled (398 modules)
+ GET /api/auth/me 200 in 2946ms
+ ✓ Compiled /api/portfolio in 209ms (400 modules)
+ GET /api/auth/me 200 in 316ms
+ GET /api/markets?status=all&category=Todos 200 in 3884ms
+ GET /api/markets?status=all&category=Todos 200 in 471ms
+ GET /api/portfolio 200 in 2515ms
+ GET /api/portfolio 200 in 1118ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 1065ms (661 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 1346ms
+ ✓ Compiled /admin in 450ms (542 modules)
+ GET /admin 200 in 735ms
+ ✓ Compiled /api/auth/me in 115ms (405 modules)
+ GET /api/auth/me 200 in 686ms
+ GET /api/auth/me 200 in 243ms
+ ✓ Compiled /api/markets in 106ms (407 modules)
+ GET /api/auth/me 200 in 738ms
+ ✓ Compiled /api/portfolio in 107ms (409 modules)
+ GET /api/markets?status=all&category=Todos 200 in 1064ms
+ ✓ Compiled in 0ms (409 modules)
+ ✓ Compiled in 1ms (409 modules)
+ ✓ Compiled in 1ms (409 modules)
+ GET /api/auth/me 200 in 709ms
+ GET /api/markets?status=all&category=Todos 200 in 1089ms
+ GET /api/portfolio 200 in 1797ms
+ GET /api/portfolio 200 in 1121ms
+ ✓ Compiled /api/auth/logout in 297ms (411 modules)
+ POST /api/auth/logout 200 in 399ms
+ ✓ Compiled /login in 246ms (681 modules)
+ ✓ Compiled /api/auth/login in 254ms (419 modules)
+ POST /api/auth/login 200 in 1089ms
+ GET /api/auth/me 200 in 240ms
+ ✓ Compiled /api/admin/financial in 203ms (421 modules)
+ GET /api/auth/me 200 in 259ms
+ ✓ Compiled (423 modules)
+ GET /api/admin/stats 200 in 3026ms
+ GET /api/admin/stats 200 in 904ms
+ GET /api/admin/financial?limit=10 200 in 4878ms
+ GET /api/admin/financial?limit=10 200 in 2532ms
+ ✓ Compiled /admin/markets in 331ms (689 modules)
+ GET /api/auth/me 200 in 464ms
+ ✓ Compiled /api/admin/markets in 190ms (425 modules)
+ GET /api/auth/me 200 in 244ms
+ GET /api/admin/markets 200 in 1591ms
+ GET /api/admin/markets 200 in 698ms
+ ○ Compiling /admin/financial ...
+ ✓ Compiled /admin/financial in 582ms (674 modules)
+ GET /api/auth/me 200 in 480ms
+ ✓ Compiled /api/admin/financial in 113ms (408 modules)
+ GET /api/auth/me 200 in 264ms
+ GET /api/admin/financial?type=all&limit=100 200 in 3376ms
+ GET /api/admin/financial?type=all&limit=100 200 in 2713ms
+ ✓ Compiled /admin/users in 215ms (680 modules)
+ GET /api/auth/me 200 in 465ms
+ ✓ Compiled /api/admin/users in 217ms (415 modules)
+ GET /api/auth/me 200 in 307ms
+ GET /api/admin/users 200 in 1194ms
+ GET /api/admin/users 200 in 474ms
+ ✓ Compiled /admin/gateway in 395ms (683 modules)
+ GET /api/auth/me 200 in 246ms
+ GET /api/auth/me 200 in 259ms
+ ✓ Compiled /api/admin/gateway in 252ms (415 modules)
+ GET /api/admin/gateway 200 in 562ms
+ GET /api/admin/gateway 200 in 250ms
+ GET /api/auth/me 200 in 466ms
+ ✓ Compiled /api/admin/stats in 184ms (417 modules)
+ GET /api/auth/me 200 in 275ms
+ GET /api/admin/stats 200 in 1687ms
+ GET /api/admin/stats 200 in 914ms
+ GET /api/admin/financial?limit=10 200 in 2869ms
+ GET /api/admin/financial?limit=10 200 in 2228ms
+ GET /api/auth/me 200 in 464ms
+ GET /api/auth/me 200 in 248ms
+ GET /api/admin/users 200 in 693ms
+ GET /api/admin/users 200 in 460ms
+ ✓ Compiled /api/markets in 207ms (419 modules)
+ GET /api/auth/me 200 in 1162ms
+ ✓ Compiled /api/portfolio in 165ms (421 modules)
+ GET /api/auth/me 200 in 296ms
+ GET /api/markets?status=all&category=Todos 200 in 1607ms
+ GET /api/markets?status=all&category=Todos 200 in 472ms
+ GET /api/portfolio 200 in 1614ms
+ GET /api/portfolio 200 in 697ms
+ ✓ Compiled in 608ms (545 modules)
+ ✓ Compiled in 357ms (545 modules)
+ ✓ Compiled in 445ms (545 modules)
+ ✓ Compiled in 511ms (545 modules)
+ ✓ Compiled in 574ms (545 modules)
+ ○ Compiling /api/markets ...
+ ✓ Compiled /api/markets in 544ms (400 modules)
+ ✓ Compiled (402 modules)
+ GET /api/auth/me 200 in 2841ms
+ ✓ Compiled /api/portfolio in 221ms (404 modules)
+ GET /api/auth/me 200 in 262ms
+ GET /api/markets?status=all&category=Todos 200 in 3305ms
+ GET /api/markets?status=all&category=Todos 200 in 478ms
+ GET /api/markets?status=all&category=Todos 200 in 462ms
+ GET /api/portfolio 200 in 1679ms
+ GET /api/markets?status=all&category=Todos 200 in 475ms
+ GET /api/auth/me 200 in 1944ms
+ GET /api/portfolio 200 in 683ms
+ GET /api/auth/me 200 in 248ms
+ GET /api/portfolio 200 in 696ms
+ ✓ Compiled in 472ms (676 modules)
+ GET /api/portfolio 200 in 1034ms
+ ✓ Compiled in 304ms (676 modules)
+ ✓ Compiled in 436ms (676 modules)
+ ✓ Compiled in 307ms (545 modules)
+ GET / 200 in 287ms
+ ✓ Compiled /api/markets in 445ms (307 modules)
+ ✓ Compiled (406 modules)
+ GET /api/trending 200 in 735ms
+ GET /api/trending 200 in 18ms
+ GET /api/auth/me 200 in 2562ms
+ ✓ Compiled /api/portfolio in 106ms (408 modules)
+ GET /api/auth/me 200 in 552ms
+ GET /api/markets?status=all&category=Todos 200 in 3119ms
+ GET /api/markets?status=all&category=Todos 200 in 472ms
+ GET /api/portfolio 200 in 3215ms
+ GET /api/portfolio 200 in 747ms
+ ✓ Compiled /api/auth/logout in 119ms (410 modules)
+ POST /api/auth/logout 200 in 196ms
+ ✓ Compiled /login in 377ms (414 modules)
+ ✓ Compiled /api/auth/login in 164ms (419 modules)
+ POST /api/auth/login 200 in 791ms
+ GET /api/auth/me 200 in 461ms
+ ✓ Compiled /api/admin/financial in 178ms (421 modules)
+ GET /api/auth/me 200 in 249ms
+ ✓ Compiled (423 modules)
+ GET /api/admin/stats 200 in 3385ms
+ GET /api/admin/stats 200 in 1130ms
+ GET /api/admin/financial?limit=10 200 in 4522ms
+ ✓ Compiled /admin/trending in 498ms (701 modules)
+ GET /api/auth/me 200 in 478ms
+ GET /api/auth/me 200 in 269ms
+ ✓ Compiled /api/admin/trending in 264ms (429 modules)
+ GET /api/admin/financial?limit=10 200 in 2844ms
+ GET /api/admin/trending 200 in 1351ms
+ GET /api/admin/trending 200 in 465ms
+ ✓ Compiled in 615ms (547 modules)
+ ✓ Compiled in 446ms (547 modules)
+ ✓ Compiled /api/auth/me in 103ms (400 modules)
+ GET /api/auth/me 200 in 706ms
+ GET /api/auth/me 200 in 234ms
+ ✓ Compiled /api/admin/trending in 391ms (404 modules)
+ GET /api/admin/trending 200 in 958ms
+ GET /api/admin/trending 200 in 506ms
+ ✓ Compiled in 515ms (678 modules)
+ ✓ Compiled in 426ms (678 modules)
+ GET / 200 in 238ms
+ ✓ Compiled /api/trending in 264ms (406 modules)
+ ✓ Compiled (408 modules)
+ GET /api/trending 200 in 537ms
+ GET /api/auth/me 200 in 555ms
+ GET /api/trending 200 in 120ms
+ ✓ Compiled /api/portfolio in 161ms (410 modules)
+ GET /api/auth/me 200 in 819ms
+ GET /api/markets?status=all&category=Todos 200 in 1456ms
+ GET /api/markets?status=all&category=Todos 200 in 482ms
+ GET /api/portfolio 200 in 1932ms
+ ✓ Compiled /api/admin/upload in 390ms (403 modules)
+ POST /api/admin/upload 400 in 2395ms
+ POST /api/admin/upload 200 in 245ms
+ ✓ Compiled /api/admin/trending in 308ms (402 modules)
+ POST /api/admin/trending 200 in 865ms
+ ✓ Compiled /api/markets in 115ms (404 modules)
+ ✓ Compiled (408 modules)
+ GET /api/trending 200 in 1318ms
+ GET /api/trending 200 in 552ms
+ GET /api/auth/me 200 in 2612ms
+ GET /api/auth/me 200 in 296ms
+ ✓ Compiled /api/portfolio in 295ms (410 modules)
+ GET /api/markets?status=all&category=Todos 200 in 3279ms
+ GET /api/markets?status=all&category=Todos 200 in 492ms
+ GET /api/portfolio 200 in 1785ms
+ GET /api/portfolio 200 in 757ms
+ ✓ Compiled in 740ms (547 modules)
+ GET / 200 in 260ms
+ ✓ Compiled /api/trending in 117ms (400 modules)
+ ✓ Compiled (406 modules)
+ GET /api/markets?status=all&category=Todos 200 in 1480ms
+ GET /api/trending 200 in 1477ms
+ GET /api/markets?status=all&category=Todos 200 in 479ms
+ GET /api/auth/me 200 in 2271ms
+ GET /api/trending 200 in 922ms
+ GET /api/auth/me 200 in 241ms
+ ✓ Compiled /api/portfolio in 145ms (408 modules)
+ GET /api/portfolio 200 in 1601ms
+ GET /api/portfolio 200 in 693ms
+ GET / 200 in 220ms
+ GET /api/auth/me 200 in 499ms
+ GET /api/auth/me 200 in 253ms
+ GET /api/trending 200 in 2462ms
+ GET /api/markets?status=all&category=Todos 200 in 2680ms
+ GET /api/trending 200 in 474ms
+ GET /api/markets?status=all&category=Todos 200 in 473ms
+ GET /api/portfolio 200 in 2872ms
+ GET /api/portfolio 200 in 296ms
+ ○ Compiling /market/[id] ...
+ ✓ Compiled /market/[id] in 565ms (277 modules)
+ ✓ Compiled /api/markets/[id] in 153ms (404 modules)
+ ✓ Compiled (406 modules)
+ ⨯ PrismaClientKnownRequestError: 
+Invalid `prisma.market.findUnique()` invocation:
+
+
+The table `public.Market` does not exist in the current database.
+    at $n.handleRequestError (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async GET (webpack-internal:///(rsc)/./app/api/markets/[id]/route.ts:14:20)
+    at async C:\Users\gamer\Desktop\previsao\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:55038
+    at async ek.execute (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:45808)
+    at async ek.handle (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:56292)
+    at async doRender (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\base-server.js:1377:42)
+    at async cacheEntry.responseCache.get.routeKind (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\base-server.js:1587:40)
+    at async DevServer.renderToResponseWithComponentsImpl (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\base-server.js:1507:28)
+    at async DevServer.renderPageComponent (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\base-server.js:1931:24)
+    at async DevServer.renderToResponseImpl (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\base-server.js:1969:32)
+    at async DevServer.pipeImpl (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\base-server.js:816:17)
+    at async C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\lib\router-server.js:174:21)
+    at async handleRequest (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\lib\router-server.js:353:24)
+    at async requestHandlerImpl (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\lib\router-server.js:377:13)
+    at async Server.requestListener (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  code: 'P2021',
+  clientVersion: '5.22.0',
+  meta: { modelName: 'Market', table: 'public.Market' }
+}
+ GET /api/markets/cmql2lvcz002qzmmnlonhs01e 500 in 1148ms
+ GET /api/auth/me 200 in 1369ms
+ GET /api/auth/me 200 in 264ms
+ ⨯ PrismaClientKnownRequestError: 
+Invalid `prisma.market.findUnique()` invocation:
+
+
+The table `public.Market` does not exist in the current database.
+    at $n.handleRequestError (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async GET (webpack-internal:///(rsc)/./app/api/markets/[id]/route.ts:14:20)
+    at async C:\Users\gamer\Desktop\previsao\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:55038
+    at async ek.execute (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:45808)
+    at async ek.handle (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:56292)
+    at async doRender (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\base-server.js:1377:42)
+    at async cacheEntry.responseCache.get.routeKind (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\base-server.js:1587:40)
+    at async DevServer.renderToResponseWithComponentsImpl (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\base-server.js:1507:28)
+    at async DevServer.renderPageComponent (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\base-server.js:1931:24)
+    at async DevServer.renderToResponseImpl (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\base-server.js:1969:32)
+    at async DevServer.pipeImpl (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\base-server.js:816:17)
+    at async C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\lib\router-server.js:174:21)
+    at async handleRequest (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\lib\router-server.js:353:24)
+    at async requestHandlerImpl (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\lib\router-server.js:377:13)
+    at async Server.requestListener (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  code: 'P2021',
+  clientVersion: '5.22.0',
+  meta: { modelName: 'Market', table: 'public.Market' }
+}
+ GET /api/markets/cmql2lvcz002qzmmnlonhs01e 500 in 789ms
+ GET /market/cmql2lvcz002qzmmnlonhs01e 200 in 240ms
+ ⨯ PrismaClientKnownRequestError: 
+Invalid `prisma.market.findUnique()` invocation:
+
+
+The table `public.Market` does not exist in the current database.
+    at $n.handleRequestError (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async GET (webpack-internal:///(rsc)/./app/api/markets/[id]/route.ts:14:20)
+    at async C:\Users\gamer\Desktop\previsao\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:55038
+    at async ek.execute (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:45808)
+    at async ek.handle (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:56292)
+    at async doRender (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\base-server.js:1377:42)
+    at async cacheEntry.responseCache.get.routeKind (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\base-server.js:1587:40)
+    at async DevServer.renderToResponseWithComponentsImpl (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\base-server.js:1507:28)
+    at async DevServer.renderPageComponent (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\base-server.js:1931:24)
+    at async DevServer.renderToResponseImpl (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\base-server.js:1969:32)
+    at async DevServer.pipeImpl (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\base-server.js:816:17)
+    at async C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\lib\router-server.js:174:21)
+    at async handleRequest (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\lib\router-server.js:353:24)
+    at async requestHandlerImpl (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\lib\router-server.js:377:13)
+    at async Server.requestListener (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  code: 'P2021',
+  clientVersion: '5.22.0',
+  meta: { modelName: 'Market', table: 'public.Market' }
+}
+ GET /api/markets/cmql2lvcz002qzmmnlonhs01e 500 in 1717ms
+ GET /api/auth/me 200 in 1889ms
+ ⨯ PrismaClientKnownRequestError: 
+Invalid `prisma.market.findUnique()` invocation:
+
+
+The table `public.Market` does not exist in the current database.
+    at $n.handleRequestError (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async GET (webpack-internal:///(rsc)/./app/api/markets/[id]/route.ts:14:20)
+    at async C:\Users\gamer\Desktop\previsao\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:55038
+    at async ek.execute (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:45808)
+    at async ek.handle (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:56292)
+    at async doRender (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\base-server.js:1377:42)
+    at async cacheEntry.responseCache.get.routeKind (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\base-server.js:1587:40)
+    at async DevServer.renderToResponseWithComponentsImpl (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\base-server.js:1507:28)
+    at async DevServer.renderPageComponent (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\base-server.js:1931:24)
+    at async DevServer.renderToResponseImpl (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\base-server.js:1969:32)
+    at async DevServer.pipeImpl (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\base-server.js:816:17)
+    at async C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\lib\router-server.js:174:21)
+    at async handleRequest (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\lib\router-server.js:353:24)
+    at async requestHandlerImpl (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\lib\router-server.js:377:13)
+    at async Server.requestListener (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  code: 'P2021',
+  clientVersion: '5.22.0',
+  meta: { modelName: 'Market', table: 'public.Market' }
+}
+ GET /api/markets/cmql2lvcz002qzmmnlonhs01e 500 in 252ms
+ GET /api/auth/me 200 in 238ms
+ GET / 200 in 70ms
+ ✓ Compiled /api/trending in 227ms (404 modules)
+ ✓ Compiled (408 modules)
+ ⨯ PrismaClientKnownRequestError: 
+Invalid `prisma.market.findMany()` invocation:
+
+
+The table `public.Market` does not exist in the current database.
+    at $n.handleRequestError (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async GET (webpack-internal:///(rsc)/./app/api/markets/route.ts:16:21)
+    at async C:\Users\gamer\Desktop\previsao\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:55038
+    at async ek.execute (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:45808)
+    at async ek.handle (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:56292)
+    at async doRender (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\base-server.js:1377:42)
+    at async cacheEntry.responseCache.get.routeKind (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\base-server.js:1599:28)
+    at async DevServer.renderToResponseWithComponentsImpl (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\base-server.js:1507:28)
+    at async DevServer.renderPageComponent (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\base-server.js:1931:24)
+    at async DevServer.renderToResponseImpl (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\base-server.js:1969:32)
+    at async DevServer.pipeImpl (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\base-server.js:816:17)
+    at async C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\lib\router-server.js:174:21)
+    at async handleRequest (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\lib\router-server.js:353:24)
+    at async requestHandlerImpl (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\lib\router-server.js:377:13)
+    at async Server.requestListener (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  code: 'P2021',
+  clientVersion: '5.22.0',
+  meta: { modelName: 'Market', table: 'public.Market' }
+}
+ GET /api/markets?status=all&category=Todos 500 in 1056ms
+ ⨯ PrismaClientKnownRequestError: 
+Invalid `prisma.market.findMany()` invocation:
+
+
+The table `public.Market` does not exist in the current database.
+    at $n.handleRequestError (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async GET (webpack-internal:///(rsc)/./app/api/markets/route.ts:16:21)
+    at async C:\Users\gamer\Desktop\previsao\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:55038
+    at async ek.execute (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:45808)
+    at async ek.handle (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:56292)
+    at async doRender (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\base-server.js:1377:42)
+    at async cacheEntry.responseCache.get.routeKind (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\base-server.js:1599:28)
+    at async DevServer.renderToResponseWithComponentsImpl (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\base-server.js:1507:28)
+    at async DevServer.renderPageComponent (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\base-server.js:1931:24)
+    at async DevServer.renderToResponseImpl (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\base-server.js:1969:32)
+    at async DevServer.pipeImpl (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\base-server.js:816:17)
+    at async C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\lib\router-server.js:174:21)
+    at async handleRequest (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\lib\router-server.js:353:24)
+    at async requestHandlerImpl (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\lib\router-server.js:377:13)
+    at async Server.requestListener (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  code: 'P2021',
+  clientVersion: '5.22.0',
+  meta: { modelName: 'Market', table: 'public.Market' }
+}
+ GET /api/markets?status=all&category=Todos 500 in 244ms
+ GET /api/auth/me 200 in 1391ms
+ GET /api/auth/me 200 in 263ms
+ ✓ Compiled /api/portfolio in 357ms (410 modules)
+ ⨯ PrismaClientKnownRequestError: 
+Invalid `prisma.position.findMany()` invocation:
+
+
+The table `public.Position` does not exist in the current database.
+    at $n.handleRequestError (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async GET (webpack-internal:///(rsc)/./app/api/portfolio/route.ts:20:23)
+    at async C:\Users\gamer\Desktop\previsao\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:55038
+    at async ek.execute (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:45808)
+    at async ek.handle (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:56292)
+    at async doRender (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\base-server.js:1377:42)
+    at async cacheEntry.responseCache.get.routeKind (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\base-server.js:1599:28)
+    at async DevServer.renderToResponseWithComponentsImpl (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\base-server.js:1507:28)
+    at async DevServer.renderPageComponent (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\base-server.js:1931:24)
+    at async DevServer.renderToResponseImpl (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\base-server.js:1969:32)
+    at async DevServer.pipeImpl (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\base-server.js:816:17)
+    at async C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\lib\router-server.js:174:21)
+    at async handleRequest (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\lib\router-server.js:353:24)
+    at async requestHandlerImpl (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\lib\router-server.js:377:13)
+    at async Server.requestListener (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  code: 'P2021',
+  clientVersion: '5.22.0',
+  meta: { modelName: 'Position', table: 'public.Position' }
+}
+ GET /api/portfolio 500 in 694ms
+ ⨯ PrismaClientKnownRequestError: 
+Invalid `prisma.position.findMany()` invocation:
+
+
+The table `public.Position` does not exist in the current database.
+    at $n.handleRequestError (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async GET (webpack-internal:///(rsc)/./app/api/portfolio/route.ts:20:23)
+    at async C:\Users\gamer\Desktop\previsao\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:55038
+    at async ek.execute (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:45808)
+    at async ek.handle (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:56292)
+    at async doRender (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\base-server.js:1377:42)
+    at async cacheEntry.responseCache.get.routeKind (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\base-server.js:1599:28)
+    at async DevServer.renderToResponseWithComponentsImpl (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\base-server.js:1507:28)
+    at async DevServer.renderPageComponent (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\base-server.js:1931:24)
+    at async DevServer.renderToResponseImpl (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\base-server.js:1969:32)
+    at async DevServer.pipeImpl (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\base-server.js:816:17)
+    at async C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\lib\router-server.js:174:21)
+    at async handleRequest (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\lib\router-server.js:353:24)
+    at async requestHandlerImpl (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\lib\router-server.js:377:13)
+    at async Server.requestListener (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  code: 'P2021',
+  clientVersion: '5.22.0',
+  meta: { modelName: 'Position', table: 'public.Position' }
+}
+ GET /api/portfolio 500 in 247ms
+ ⨯ PrismaClientKnownRequestError: 
+Invalid `prisma.market.findMany()` invocation:
+
+
+The table `public.Market` does not exist in the current database.
+    at $n.handleRequestError (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async GET (webpack-internal:///(rsc)/./app/api/trending/route.ts:29:22)
+    at async C:\Users\gamer\Desktop\previsao\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:55038
+    at async ek.execute (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:45808)
+    at async ek.handle (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:56292)
+    at async doRender (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\base-server.js:1377:42)
+    at async cacheEntry.responseCache.get.routeKind (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\base-server.js:1599:28)
+    at async DevServer.renderToResponseWithComponentsImpl (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\base-server.js:1507:28)
+    at async DevServer.renderPageComponent (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\base-server.js:1931:24)
+    at async DevServer.renderToResponseImpl (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\base-server.js:1969:32)
+    at async DevServer.pipeImpl (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\base-server.js:816:17)
+    at async C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\lib\router-server.js:174:21)
+    at async handleRequest (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\lib\router-server.js:353:24)
+    at async requestHandlerImpl (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\lib\router-server.js:377:13)
+    at async Server.requestListener (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  code: 'P2021',
+  clientVersion: '5.22.0',
+  meta: { modelName: 'Market', table: 'public.Market' }
+}
+ GET /api/trending 500 in 3319ms
+ ⨯ PrismaClientKnownRequestError: 
+Invalid `prisma.market.findMany()` invocation:
+
+
+The table `public.Market` does not exist in the current database.
+    at $n.handleRequestError (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:121:7315)
+    at $n.handleAndLogRequestError (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (C:\Users\gamer\Desktop\previsao\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async GET (webpack-internal:///(rsc)/./app/api/trending/route.ts:29:22)
+    at async C:\Users\gamer\Desktop\previsao\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:55038
+    at async ek.execute (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:45808)
+    at async ek.handle (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:56292)
+    at async doRender (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\base-server.js:1377:42)
+    at async cacheEntry.responseCache.get.routeKind (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\base-server.js:1599:28)
+    at async DevServer.renderToResponseWithComponentsImpl (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\base-server.js:1507:28)
+    at async DevServer.renderPageComponent (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\base-server.js:1931:24)
+    at async DevServer.renderToResponseImpl (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\base-server.js:1969:32)
+    at async DevServer.pipeImpl (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\base-server.js:816:17)
+    at async C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\lib\router-server.js:174:21)
+    at async handleRequest (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\lib\router-server.js:353:24)
+    at async requestHandlerImpl (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\lib\router-server.js:377:13)
+    at async Server.requestListener (C:\Users\gamer\Desktop\previsao\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  code: 'P2021',
+  clientVersion: '5.22.0',
+  meta: { modelName: 'Market', table: 'public.Market' }
+}
+ GET /api/trending 500 in 246ms
