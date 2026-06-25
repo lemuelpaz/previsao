@@ -96,6 +96,8 @@ export default function PortfolioPage() {
   const pnlTotal = closed.reduce((s, p) => s + (p.pnl ?? 0), 0);
   const curVal   = open.reduce((s, p) => s + p.shares * (p.outcome.probability / 100), 0);
 
+  if (!user) return null;
+
   return (
     <>
       <Navbar balance={user.balance} role={undefined} userName={user.name ?? user.phone} />
