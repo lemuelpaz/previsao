@@ -26,14 +26,32 @@ services:
     environment:
       DATABASE_URL: postgresql://previsao:previsao@db:5432/previsao
       NODE_ENV: production
-    ports:
-      - "3000:3000"
+    expose:
+      - "3000"
     volumes:
       - uploads:/app/public/uploads
     depends_on:
       db:
         condition: service_healthy
 
+  # ── Proxy reverso com HTTPS automático (Let's Encrypt) ──
+  caddy:
+    image: caddy:2-alpine
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    env_file:
+      - .env
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on:
+      - app
+
 volumes:
   db_data:
   uploads:
+  caddy_data:
+  caddy_config:
