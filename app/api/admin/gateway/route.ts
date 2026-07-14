@@ -45,6 +45,8 @@ export async function POST(req: Request) {
     "stripe_enabled", "stripe_publishable_key", "stripe_secret_key", "stripe_webhook_secret",
     // PayPal
     "paypal_enabled", "paypal_client_id", "paypal_client_secret", "paypal_mode",
+    // MB WAY (ifthenpay)
+    "mbway_enabled", "mbway_key", "mbway_antiphishing_key", "mbway_min_deposit",
   ];
   for (const key of allowed) {
     if (body[key] !== undefined) current[key] = String(body[key]);

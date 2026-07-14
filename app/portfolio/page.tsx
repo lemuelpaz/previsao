@@ -23,9 +23,10 @@ export default function PortfolioPage() {
   const [txs,       setTxs]       = useState<Tx[]>([]);
   const [tab,       setTab]       = useState<"positions"|"history">("positions");
   const [modal,          setModal]          = useState<null | "deposit" | "withdraw">(null);
-  const [depositMethod,  setDepositMethod]  = useState<"pix"|"stripe"|"paypal">("pix");
+  const [depositMethod,  setDepositMethod]  = useState<"pix"|"stripe"|"paypal"|"mbway"|"multibanco">("pix");
   const [depositAmount,  setDepositAmount]  = useState(100);
-  const [depositResult,  setDepositResult]  = useState<{ pixCode?: string; pixQRCode?: string; fee?: number } | null>(null);
+  const [depositPhone,   setDepositPhone]   = useState("");
+  const [depositResult,  setDepositResult]  = useState<{ pixCode?: string; pixQRCode?: string; fee?: number; mbway?: boolean } | null>(null);
   const [withdrawAmount, setWithdrawAmount] = useState(50);
   const [withdrawKey,    setWithdrawKey]    = useState("");
   const [withdrawKeyType,setWithdrawKeyType]= useState("CPF");
@@ -46,14 +47,14 @@ export default function PortfolioPage() {
 
   async function doDeposit() {
     setLoadingPay(true); setPayError("");
-    if (depositMethod === "stripe") {
+    if (depositMethod === "stripe" || depositMethod === "multibanco") {
       const res = await fetch("/api/payments/stripe", {
         method: "POST", headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ amount: depositAmount }),
+        body: JSON.stringify({ amount: depositAmount, method: depositMethod === "multibanco" ? "multibanco" : "card" }),
       });
       const d = await res.json();
       setLoadingPay(false);
-      if (!res.ok) { setPayError(d.error ?? "Erro ao iniciar Stripe"); return; }
+      if (!res.ok) { setPayError(d.error ?? "Erro ao iniciar pagamento"); return; }
       window.location.href = d.url;
       return;
     }
@@ -66,6 +67,17 @@ export default function PortfolioPage() {
       setLoadingPay(false);
       if (!res.ok) { setPayError(d.error ?? "Erro ao iniciar PayPal"); return; }
       window.location.href = d.approveUrl;
+      return;
+    }
+    if (depositMethod === "mbway") {
+      const res = await fetch("/api/payments/mbway", {
+        method: "POST", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ amount: depositAmount, phone: depositPhone }),
+      });
+      const d = await res.json();
+      setLoadingPay(false);
+      if (!res.ok) { setPayError(d.error ?? "Erro ao iniciar MB WAY"); return; }
+      setDepositResult({ mbway: true });
       return;
     }
     const res = await fetch("/api/payments/deposit", {
@@ -228,9 +240,11 @@ export default function PortfolioPage() {
                   <div style={{ fontSize: 12, color: "var(--text-muted)", marginBottom: 8 }}>Método de pagamento</div>
                   <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 6 }}>
                     {([
-                      { id: "pix",    label: "PIX",    sub: "Brasil",       color: "var(--primary)" },
-                      { id: "stripe", label: "Stripe", sub: "Cartão",       color: "#635bff" },
-                      { id: "paypal", label: "PayPal", sub: "Internacional", color: "#0070ba" },
+                      { id: "pix",        label: "PIX",        sub: "Brasil",       color: "var(--primary)" },
+                      { id: "stripe",     label: "Stripe",     sub: "Cartão",       color: "#635bff" },
+                      { id: "paypal",     label: "PayPal",     sub: "Internacional", color: "#0070ba" },
+                      { id: "mbway",      label: "MB WAY",     sub: "Portugal",     color: "#d80c73" },
+                      { id: "multibanco", label: "Multibanco", sub: "Portugal",     color: "#004a99" },
                     ] as const).map(m => (
                       <button key={m.id} onClick={() => setDepositMethod(m.id)} style={{
                         padding: "10px 6px", borderRadius: 8, border: `1px solid ${depositMethod === m.id ? m.color : "var(--border)"}`,
@@ -247,24 +261,30 @@ export default function PortfolioPage() {
 
                 <div>
                   <label style={{ fontSize: 12, color: "var(--text-muted)", display: "block", marginBottom: 6 }}>
-                    {depositMethod === "pix" ? "Valor (R$)" : "Valor (USD)"}
+                    {depositMethod === "pix" ? "Valor (R$)" : depositMethod === "mbway" || depositMethod === "multibanco" ? "Valor (€)" : "Valor (USD)"}
                   </label>
                   <input type="number" min={depositMethod === "pix" ? 10 : 1} value={depositAmount} onChange={e => setDepositAmount(parseFloat(e.target.value) || 0)}
                     className="inp" style={{ fontSize: 18, fontWeight: 700 }} />
                 </div>
+                {depositMethod === "mbway" && (
+                  <div>
+                    <label style={{ fontSize: 12, color: "var(--text-muted)", display: "block", marginBottom: 6 }}>Telemóvel</label>
+                    <input value={depositPhone} onChange={e => setDepositPhone(e.target.value)} className="inp" placeholder="912345678" />
+                  </div>
+                )}
                 <div style={{ display: "flex", gap: 6, flexWrap: "wrap" }}>
                   {(depositMethod === "pix" ? [50, 100, 200, 500, 1000] : [5, 10, 20, 50, 100]).map(v => (
                     <button key={v} onClick={() => setDepositAmount(v)} style={{ padding: "5px 12px", borderRadius: 6, border: `1px solid ${depositAmount === v ? "var(--border-acc)" : "var(--border)"}`, background: depositAmount === v ? "var(--badge-bg)" : "none", color: depositAmount === v ? "var(--primary)" : "var(--text-muted)", fontSize: 12, cursor: "pointer", fontWeight: 600 }}>
-                      {depositMethod === "pix" ? `R$${v}` : `$${v}`}
+                      {depositMethod === "pix" ? `R$${v}` : depositMethod === "mbway" || depositMethod === "multibanco" ? `€${v}` : `$${v}`}
                     </button>
                   ))}
                 </div>
                 {payError && <div style={{ padding: "8px 12px", background: "rgba(255,68,68,.08)", border: "1px solid rgba(255,68,68,.2)", borderRadius: 8, fontSize: 12, color: "var(--red)" }}>{payError}</div>}
-                <button onClick={doDeposit} disabled={loadingPay || depositAmount < (depositMethod === "pix" ? 10 : 1)}
+                <button onClick={doDeposit} disabled={loadingPay || depositAmount < (depositMethod === "pix" ? 10 : 1) || (depositMethod === "mbway" && depositPhone.replace(/\D/g, "").length < 9)}
                   style={{
                     padding: "13px", border: "none", borderRadius: 8, fontSize: 14, fontWeight: 700, cursor: "pointer",
                     opacity: loadingPay ? .6 : 1,
-                    background: depositMethod === "stripe" ? "#635bff" : depositMethod === "paypal" ? "#0070ba" : "var(--primary)",
+                    background: depositMethod === "stripe" ? "#635bff" : depositMethod === "paypal" ? "#0070ba" : depositMethod === "mbway" ? "#d80c73" : depositMethod === "multibanco" ? "#004a99" : "var(--primary)",
                     color: "#fff",
                   }}>
                   {loadingPay
@@ -273,8 +293,26 @@ export default function PortfolioPage() {
                       ? `Gerar PIX — R$${depositAmount}`
                       : depositMethod === "stripe"
                         ? `Pagar com Stripe — $${depositAmount}`
-                        : `Pagar com PayPal — $${depositAmount}`
+                        : depositMethod === "paypal"
+                          ? `Pagar com PayPal — $${depositAmount}`
+                          : depositMethod === "mbway"
+                            ? `Pagar com MB WAY — €${depositAmount}`
+                            : `Gerar referência Multibanco — €${depositAmount}`
                   }
+                </button>
+              </div>
+            ) : depositResult.mbway ? (
+              <div style={{ display: "flex", flexDirection: "column", gap: 14, alignItems: "center", textAlign: "center" }}>
+                <div style={{ fontSize: 34 }}>📲</div>
+                <div>
+                  <div style={{ fontSize: 13, fontWeight: 600, color: "var(--text)", marginBottom: 4 }}>Notificação enviada!</div>
+                  <div style={{ fontSize: 12, color: "var(--text-muted)", lineHeight: 1.6 }}>Abra o app MB WAY no seu telemóvel e aprove o pagamento. Tem 4 minutos para confirmar.</div>
+                </div>
+                <div style={{ fontSize: 11, color: "var(--text-dim)", lineHeight: 1.5 }}>
+                  Saldo creditado automaticamente após confirmação do pagamento
+                </div>
+                <button onClick={() => { setModal(null); setDepositResult(null); }} style={{ width: "100%", padding: "11px", background: "var(--surface3)", color: "var(--text-muted)", border: "1px solid var(--border)", borderRadius: 8, fontSize: 13, fontWeight: 600, cursor: "pointer" }}>
+                  Fechar
                 </button>
               </div>
             ) : (

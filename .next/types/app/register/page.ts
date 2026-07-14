@@ -1,4 +1,4 @@
-// File: C:\Users\gamer\Desktop\previsao\app\register\page.tsx
+// File: C:\Users\gamer\Documents\previsao1\app\register\page.tsx
 import * as entry from '../../../../app/register/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

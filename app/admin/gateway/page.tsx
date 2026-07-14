@@ -33,6 +33,11 @@ interface Config {
   paypal_client_id?:        string;
   paypal_client_secret?:    string;
   paypal_mode?:             string;
+  // MB WAY
+  mbway_enabled?:            string;
+  mbway_key?:                string;
+  mbway_antiphishing_key?:   string;
+  mbway_min_deposit?:        string;
 }
 
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
@@ -71,7 +76,7 @@ function Toggle({ on, onChange, color = "var(--primary)" }: { on: boolean; onCha
   );
 }
 
-type Tab = "veopag" | "stripe" | "paypal";
+type Tab = "veopag" | "stripe" | "paypal" | "mbway";
 
 export default function AdminGatewayPage() {
   const router = useRouter();
@@ -136,6 +141,7 @@ export default function AdminGatewayPage() {
     { id: "veopag",  label: "VeoPag PIX",  badge: cfg.gateway_enabled === "true" ? "ativo" : undefined },
     { id: "stripe",  label: "Stripe",      badge: cfg.stripe_enabled  === "true" ? "ativo" : undefined },
     { id: "paypal",  label: "PayPal",      badge: cfg.paypal_enabled  === "true" ? "ativo" : undefined },
+    { id: "mbway",   label: "MB WAY",      badge: cfg.mbway_enabled   === "true" ? "ativo" : undefined },
   ];
 
   return (
@@ -284,7 +290,50 @@ export default function AdminGatewayPage() {
               </code>
             </div>
             <div style={{ fontSize: 12, color: "var(--text-muted)", lineHeight: 1.7, padding: "4px 0" }}>
-              Configure este endpoint no Stripe Dashboard → Developers → Webhooks. Eventos necessários: <code style={{ fontSize: 11, color: "var(--text)", background: "var(--surface3)", padding: "1px 5px", borderRadius: 4 }}>checkout.session.completed</code>
+              Configure este endpoint no Stripe Dashboard → Developers → Webhooks. Eventos necessários: <code style={{ fontSize: 11, color: "var(--text)", background: "var(--surface3)", padding: "1px 5px", borderRadius: 4 }}>checkout.session.completed</code>, <code style={{ fontSize: 11, color: "var(--text)", background: "var(--surface3)", padding: "1px 5px", borderRadius: 4 }}>checkout.session.async_payment_succeeded</code> e <code style={{ fontSize: 11, color: "var(--text)", background: "var(--surface3)", padding: "1px 5px", borderRadius: 4 }}>checkout.session.async_payment_failed</code>
+            </div>
+            <div style={{ padding: "10px 14px", background: "rgba(99,91,255,.06)", border: "1px solid rgba(99,91,255,.3)", borderRadius: 6, fontSize: 12, color: "var(--text-muted)", lineHeight: 1.6 }}>
+              O Multibanco usa as mesmas credenciais Stripe acima — é cobrado em EUR e confirmado de forma assíncrona (o cliente paga a referência depois, em até 7 dias).
+            </div>
+          </Section>
+        </>
+      )}
+
+      {/* ── MB WAY Tab ─────────────────────────── */}
+      {tab === "mbway" && (
+        <>
+          <Section title="Status">
+            <Field label="MB WAY ativo" hint="Habilita depósitos via MB WAY (Portugal)">
+              <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+                <Toggle on={cfg.mbway_enabled === "true"} onChange={v => set("mbway_enabled", v ? "true" : "false")} color="#d80c73" />
+                <span style={{ fontSize: 13, fontWeight: 600, color: cfg.mbway_enabled === "true" ? "#d80c73" : "var(--text-muted)" }}>
+                  {cfg.mbway_enabled === "true" ? "Ativo" : "Inativo"}
+                </span>
+              </div>
+            </Field>
+          </Section>
+
+          <Section title="Credenciais ifthenpay">
+            <Field label="MB WAY Key" hint="Chave atribuída pela ifthenpay ao aderir ao MB WAY">
+              <SecretInput cfgKey="mbway_key" placeholder="xxxx-xxxx-xxxx" />
+            </Field>
+            <Field label="Chave anti-phishing" hint="Opcional — valida a autenticidade do callback recebido">
+              <SecretInput cfgKey="mbway_antiphishing_key" placeholder="xxxxxxxxxxxxxxxx" />
+            </Field>
+            <Field label="Depósito mínimo (€)">
+              <TextInput cfgKey="mbway_min_deposit" placeholder="1" type="number" />
+            </Field>
+          </Section>
+
+          <Section title="Integração">
+            <div style={{ padding: "10px 14px", background: "rgba(216,12,115,.06)", border: "1px solid rgba(216,12,115,.3)", borderRadius: 6 }}>
+              <div style={{ fontSize: 11, color: "var(--text-dim)", marginBottom: 4 }}>URL de callback</div>
+              <code style={{ fontSize: 12, color: "#d80c73", fontFamily: "monospace" }}>
+                {typeof window !== "undefined" ? window.location.origin : ""}/api/payments/mbway/webhook
+              </code>
+            </div>
+            <div style={{ fontSize: 12, color: "var(--text-muted)", lineHeight: 1.7, padding: "4px 0" }}>
+              Configure esta URL no backoffice da ifthenpay para o método MB WAY. O cliente recebe uma notificação push no app MB WAY e tem 4 minutos para aprovar o pagamento.
             </div>
           </Section>
         </>

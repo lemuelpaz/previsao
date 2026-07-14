@@ -1,4 +1,4 @@
-// File: C:\Users\gamer\Desktop\previsao\app\api\portfolio\route.ts
+// File: C:\Users\gamer\Documents\previsao1\app\api\portfolio\route.ts
 import * as entry from '../../../../../app/api/portfolio/route.js'
 import type { NextRequest } from 'next/server.js'
 

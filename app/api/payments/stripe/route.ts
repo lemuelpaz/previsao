@@ -13,21 +13,23 @@ export async function POST(req: Request) {
   const cfg = readGatewayConfig();
   if (!cfg.stripe_secret_key) return NextResponse.json({ error: "Stripe não configurado" }, { status: 400 });
 
-  const { amount } = await req.json();
-  if (!amount || amount < 1) return NextResponse.json({ error: "Valor mínimo: $1" }, { status: 400 });
+  const { amount, method } = await req.json();
+  const isMultibanco = method === "multibanco";
+  const currency = isMultibanco ? "eur" : "usd";
+  if (!amount || amount < 1) return NextResponse.json({ error: `Valor mínimo: ${isMultibanco ? "€1" : "$1"}` }, { status: 400 });
 
   const stripe = new Stripe(cfg.stripe_secret_key);
   const origin = req.headers.get("origin") || "http://localhost:3000";
 
   const payment = await db.payment.create({
-    data: { userId: session.userId, type: "deposit", amount, status: "pending", detail: "stripe" },
+    data: { userId: session.userId, type: "deposit", amount, status: "pending", detail: isMultibanco ? "multibanco" : "stripe" },
   });
 
   const checkoutSession = await stripe.checkout.sessions.create({
-    payment_method_types: ["card"],
+    payment_method_types: isMultibanco ? ["multibanco"] : ["card"],
     line_items: [{
       price_data: {
-        currency: "usd",
+        currency,
         product_data: { name: "Metrix — Depósito de saldo" },
         unit_amount: Math.round(amount * 100),
       },
