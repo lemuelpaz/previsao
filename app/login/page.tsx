@@ -57,9 +57,6 @@ export default function LoginPage() {
               {t.createFree}
             </button>
           </div>
-          <div style={{ textAlign: "center", fontSize: 11, color: "var(--text-dim)", marginTop: -4 }}>
-            Demo: <code style={{ color: "var(--text-muted)" }}>demo</code> / <code style={{ color: "var(--text-muted)" }}>demo123</code> — R$5.000 de saldo
-          </div>
         </form>
       </div>
     </div>
