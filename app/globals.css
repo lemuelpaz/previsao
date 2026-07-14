@@ -109,6 +109,7 @@ body::before {
 
 /* Layout helpers */
 .market-layout { display: grid; grid-template-columns: 1fr 320px; gap: 20px; align-items: start; }
+.trader-layout { display: grid; grid-template-columns: 300px 1fr; gap: 16px; align-items: start; }
 .lb-cols       { display: flex; gap: 60px; align-items: center; }
 
 /* ── Bottom Nav ─────────────────────────────── */
@@ -123,6 +124,7 @@ body::before {
   .sidebar        { display: none !important; }
   main            { padding: 16px 12px 88px !important; }
   .market-layout  { grid-template-columns: 1fr !important; }
+  .trader-layout  { grid-template-columns: 1fr !important; }
   .trade-sticky   { position: static !important; }
   .lb-cols        { gap: 16px !important; }
   .lb-header      { font-size: 10px !important; }
