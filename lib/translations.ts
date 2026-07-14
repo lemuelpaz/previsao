@@ -2,7 +2,7 @@ export type Lang = "pt" | "en" | "es";
 
 export const translations = {
   pt: {
-    markets: "Mercados", portfolio: "Portfólio", leaderboard: "Ranking", admin: "Admin",
+    markets: "Mercados", trader: "Trader", portfolio: "Portfólio", leaderboard: "Ranking", admin: "Admin",
     withdraw: "Sacar", deposit: "+ Depositar", signin: "Entrar", signup: "Cadastrar", signout: "Sair",
     search: "Buscar mercados...", loading: "Carregando...", yes: "SIM", no: "NÃO",
     filterByCategory: "Filtrar por Categoria", hotMarkets: "Mercados em Alta",
@@ -48,7 +48,7 @@ export const translations = {
     footerCopyright: "Todos os direitos reservados.",
   },
   en: {
-    markets: "Markets", portfolio: "Portfolio", leaderboard: "Leaderboard", admin: "Admin",
+    markets: "Markets", trader: "Trader", portfolio: "Portfolio", leaderboard: "Leaderboard", admin: "Admin",
     withdraw: "Withdraw", deposit: "+ Deposit", signin: "Sign In", signup: "Sign Up", signout: "Sign Out",
     search: "Search markets...", loading: "Loading...", yes: "YES", no: "NO",
     filterByCategory: "Filter by Category", hotMarkets: "Hot Markets",
@@ -94,7 +94,7 @@ export const translations = {
     footerCopyright: "All rights reserved.",
   },
   es: {
-    markets: "Mercados", portfolio: "Portafolio", leaderboard: "Clasificación", admin: "Admin",
+    markets: "Mercados", trader: "Trader", portfolio: "Portafolio", leaderboard: "Clasificación", admin: "Admin",
     withdraw: "Retirar", deposit: "+ Depositar", signin: "Entrar", signup: "Registrarse", signout: "Salir",
     search: "Buscar mercados...", loading: "Cargando...", yes: "SÍ", no: "NO",
     filterByCategory: "Filtrar por Categoría", hotMarkets: "Mercados en Alza",

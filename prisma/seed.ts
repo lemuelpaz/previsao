@@ -224,6 +224,10 @@ async function main() {
         { marketId: market.id, label: "NÃO", probability: 100 - m.yesProb, shares: (100 - m.yesProb) * 100 },
       ],
     });
+    const outcomes = await db.outcome.findMany({ where: { marketId: market.id } });
+    await db.priceHistory.createMany({
+      data: outcomes.map(o => ({ outcomeId: o.id, probability: o.probability })),
+    });
   }
 
   console.log("Seed concluído — admin/admin123, demo/demo123");

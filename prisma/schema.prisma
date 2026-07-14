@@ -47,8 +47,20 @@ model Outcome {
   probability Float  @default(50)
   shares      Float  @default(0)
 
-  market    Market     @relation(fields: [marketId], references: [id])
-  positions Position[]
+  market       Market         @relation(fields: [marketId], references: [id])
+  positions    Position[]
+  priceHistory PriceHistory[]
+}
+
+model PriceHistory {
+  id          String   @id @default(cuid())
+  outcomeId   String
+  probability Float
+  createdAt   DateTime @default(now())
+
+  outcome Outcome @relation(fields: [outcomeId], references: [id])
+
+  @@index([outcomeId, createdAt])
 }
 
 model Position {

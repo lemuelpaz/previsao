@@ -63,6 +63,7 @@ export default function Navbar({ balance, role, userName, onSearch }: Props) {
 
   const LINKS = [
     { href: "/",            label: t.markets    },
+    { href: "/trader",      label: t.trader      },
     { href: "/portfolio",   label: t.portfolio   },
     { href: "/leaderboard", label: t.leaderboard },
   ];

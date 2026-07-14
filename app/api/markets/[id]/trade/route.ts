@@ -65,6 +65,7 @@ export async function POST(req: Request, { params }: { params: { id: string } })
       where: { id: outcomeId },
       data: { probability: newProb, shares: { increment: shares } },
     });
+    await tx.priceHistory.create({ data: { outcomeId, probability: newProb } });
 
     // Redistribute probability from other outcomes
     if (others.length > 0 && probDiff > 0) {
@@ -72,6 +73,7 @@ export async function POST(req: Request, { params }: { params: { id: string } })
       for (const o of others) {
         const newOtherProb = Math.min(99, Math.max(1, o.probability - perOther));
         await tx.outcome.update({ where: { id: o.id }, data: { probability: newOtherProb } });
+        await tx.priceHistory.create({ data: { outcomeId: o.id, probability: newOtherProb } });
       }
     }
 

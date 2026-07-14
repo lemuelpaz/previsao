@@ -98,5 +98,9 @@ export async function POST(req: Request) {
       { marketId: market.id, label: "NÃO", probability: 100 - prob, shares: (100 - prob) * 100 },
     ],
   });
+  const outcomes = await db.outcome.findMany({ where: { marketId: market.id } });
+  await db.priceHistory.createMany({
+    data: outcomes.map(o => ({ outcomeId: o.id, probability: o.probability })),
+  });
   return NextResponse.json({ market });
 }
